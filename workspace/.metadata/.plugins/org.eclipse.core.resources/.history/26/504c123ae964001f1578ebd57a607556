@@ -1,0 +1,59 @@
+package test;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class TestDBConnect {
+
+	public TestDBConnect() {
+	}
+
+	public void oracleConnect() {
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rest = null;
+
+		// 1. 오라클 jdbc 드라이브 등록
+		try {
+			// 1. 오라클 jdbc 드라이브 등록
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			// 2. db 연결
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "c##jdbc", "jdbc");
+			System.out.println(conn);
+
+			// 3. 문장(Statement) 객체 만들기
+			stmt = conn.createStatement();
+
+			// 4. SQL 전송하고 결과받기
+			String query = "select * from employee"; // executeQuery(query) : ResultSet 사용함
+			rest = stmt.executeQuery(query);
+
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				// 6. 반드시 닫기 : 생성과 반대 순서 닫기함
+				rest.close();
+				stmt.close();
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		// oracle db 연결 테스트
+		new TestDBConnect().oracleConnect();
+
+	}
+
+}

@@ -1,0 +1,97 @@
+package test.controller;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Properties;
+
+import test.entity.Employee;
+
+public class TestProperties {
+
+	public static void main(String[] args) {
+		TestProperties test = new TestProperties();
+		Properties prop = new Properties();
+
+		// empData.txt 파일 생성 및 데이터 저장
+		test.saveEmpDataToFile();
+
+		Employee[] employees = test.readFile(prop);
+		test.printConsole(prop);
+		test.addEmpData(prop);
+		test.printConsole(prop);
+		test.saveEmpXML(employees);
+	}
+
+	// empData.txt 파일을 생성하고, 사원 정보를 저장하는 메서드
+	public void saveEmpDataToFile() {
+		try (BufferedWriter writer = new BufferedWriter(
+				new OutputStreamWriter(new FileOutputStream("empData.txt"), "UTF-8"))) {
+			writer.write("20130412=홍길동, 기획부, 38000000, 0.2\n");
+			writer.write("20130413=김철수, 인사부, 42000000, 0.1\n");
+			writer.write("20130414=박영희, 재무부, 39000000, 0.15\n");
+			writer.write("20130415=최지훈, 마케팅부, 45000000, 0.25\n");
+			writer.write("20130416=이영희, 연구개발부, 50000000, 0.3\n");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public Employee[] readFile(Properties p) {
+		try (BufferedReader reader = new BufferedReader(
+				new InputStreamReader(new FileInputStream("empData.txt"), "UTF-8"))) {
+			p.load(reader); // UTF-8로 인코딩된 파일을 읽어들임
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		Employee[] employees = new Employee[p.size()];
+		int index = 0;
+
+		for (String key : p.stringPropertyNames()) {
+			String[] values = p.getProperty(key).split(", ");
+			int eId = Integer.parseInt(key);
+			String eName = values[0];
+			String dept = values[1];
+			int salary = Integer.parseInt(values[2]);
+			double bonusPoint = Double.parseDouble(values[3]);
+
+			employees[index++] = new Employee(eId, eName, dept, salary, bonusPoint);
+		}
+
+		return employees;
+	}
+
+	public void addEmpData(Properties p) {
+		p.setProperty("20230801", "이순신, 개발부, 45000000, 0.15");
+		p.setProperty("20230802", "강감찬, 마케팅부, 50000000, 0.25");
+	}
+
+	public void printConsole(Properties p) {
+		System.out.println("Employee Data:");
+		for (String key : p.stringPropertyNames()) {
+			System.out.println(key + " => " + p.getProperty(key));
+		}
+	}
+
+	public void saveEmpXML(Employee[] er) {
+		Properties prop = new Properties();
+
+		for (Employee emp : er) {
+			int finalSalary = emp.getSalary() + (int) (emp.getSalary() * emp.getBonusPoint());
+			String value = emp.geteName() + ", " + emp.getDept() + ", " + emp.getSalary() + ", " + emp.getBonusPoint()
+					+ ", " + finalSalary;
+			prop.setProperty(String.valueOf(emp.geteId()), value);
+		}
+
+		try (FileOutputStream fos = new FileOutputStream("empResult.xml")) {
+			prop.storeToXML(fos, "Employee Data with Bonus");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

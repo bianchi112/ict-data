@@ -1,0 +1,11 @@
+package employee.controller;
+
+import employee.model.dao.EmployeeDao;
+
+// mvc 패턴 : view(사용자화면) -> 요청 -> controller 가 받음 -> model 로 전달함
+// model 이 결과 리턴 -> controller 가 받아서 view로 리턴함 ->  view 가 받아서 출력
+public class EmployeeController {
+	private EmployeeDao edao = new EmployeeDao();
+	
+	// dao 가 가진 메소드와 맞춰서 메소드 구성함
+}

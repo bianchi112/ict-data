@@ -1,0 +1,55 @@
+package employee.model.dto;
+
+import java.sql.Date;
+
+// domain model : 테이블의 한 행(domain, record)의 각 컬럼값 저장용 객체 (vo, dto, entity, do, bean)
+// dto (data transfer object) : 데이터 전송용 객체 (값을  담아서 다른 클래스로 전달되는 객체를 말함)
+// 작성원칙 : 
+// 1. 반드시 직렬화할 것
+// 2. 모든 필드는 private
+// 3. 기본생성자, 매개변수 있는 생성자 작성
+public class Employee implements java.io.Serializable {
+	private static final long serialVersionUID = -6485478099399133514L;
+
+	private String empId;
+	private String empName;
+	private String dmpNo;
+	private String email;
+	private String phone;
+	private java.sql.Date hireDate;
+	private String jobId;
+	private int salary;
+	private double bonusPct;
+	private String marriage;
+	private String marId;
+	private String deptId;
+
+	public Employee() {
+		super();
+	}
+
+	public Employee(String empId, String empName, String dmpNo) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.dmpNo = dmpNo;
+	}
+
+	public Employee(String empId, String empName, String dmpNo, String email, String phone, Date hireDate, String jobId,
+			int salary, double bonusPct, String marriage, String marId, String deptId) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.dmpNo = dmpNo;
+		this.email = email;
+		this.phone = phone;
+		this.hireDate = hireDate;
+		this.jobId = jobId;
+		this.salary = salary;
+		this.bonusPct = bonusPct;
+		this.marriage = marriage;
+		this.marId = marId;
+		this.deptId = deptId;
+	}
+
+}

@@ -1,0 +1,49 @@
+package common;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+// 공통모듈 : 모든 서비스들이 공통으로 이용하는 코드를 가진 클래스
+// SingleTone 디자인 패턴 적용함 : 프로그램 구동되는 동안 메모리에 딱 한개만 만들어서 여러 서비스가 공유함
+// 모든  메소드를 static 으로 작성함
+public class JDBCTemplate {
+	// 생성자 필요없음
+	
+	public static Connection getConnection() {
+		Connection conn = null;
+		
+		try {
+			// 1. 드라이브 등록 : 다운받은 jdbc 드라이브(*.jar) 안의 클래스임
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			// 2. db 연결
+			conn = DriverManager.getConnection(
+					"jdbc:oracle:this:@127.0.0.1:1521:xe", "", "");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return  conn;
+	}
+	
+	public static void close(Connection conn) {
+		
+	}
+	
+	public static void close(Statement stmt) {
+		
+	}
+	
+	public static void close (ResultSet rset) {
+		
+	}
+	
+	public static void commit(Connection conn) {
+		
+	}
+	
+	public static void rollback(Connection conn) {
+		
+	}
+}

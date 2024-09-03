@@ -1,0 +1,13 @@
+package collection.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListSample {
+	
+	public void testArrayList() {
+		// List 계열 ArrayList 사용 테스트
+		ArrayList alist = new ArrayList(); // 기본 10개 저장
+		List alist2 = new ArrayList();
+	}
+}

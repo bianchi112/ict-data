@@ -1,0 +1,29 @@
+package collection.controller;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+public class ListSample {
+	
+	public void testArrayList() {
+		// List 계열 ArrayList 사용 테스트
+		ArrayList alist = new ArrayList(); // 기본 10개 저장
+//		List alist2 = new ArrayList();
+//		Collection alist3 = new ArrayList();
+		
+		// 객체만 저장함, 저장 순서가 유지됨, 저장 순번(index)이 자동 부여됨
+		// 배열과 같은 저장 방식이면서, 저장 용량에 제한이 없다.
+		alist.add(new  String("java"));
+		alist.add("oracle"); // auto boxing
+		alist.add(123); // auto boxing
+		alist.add(45.6); // auto boxing
+		
+		System.out.println(alist);
+		
+		// 저장 순번(index)이 있어서, 저장 객체 하나씩 취급할 수 있음 : get(index) : Object
+		for (int index = 0; index < alist.size(); index++) {
+			System.out.println(index + " : " + alist.get(index));
+		}
+	}
+}

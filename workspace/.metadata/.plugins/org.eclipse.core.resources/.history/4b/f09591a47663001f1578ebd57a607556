@@ -1,0 +1,14 @@
+package collection.model.vo;
+
+public class BookTitleAscending implements java.util.Comparator{
+
+	@Override
+	public int compare(Object o1, Object o2) {
+		// 도서제목들끼리 비교 연산하는 정렬 기준 코드를 작성함
+		int result = 0;
+		
+		return result;
+		
+	}
+	
+}

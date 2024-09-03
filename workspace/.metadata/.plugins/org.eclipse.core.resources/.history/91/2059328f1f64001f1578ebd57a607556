@@ -1,0 +1,5 @@
+package test.nested;
+
+public class Fmap {
+	// 상수 필드를 멤버로 가질 수 있음
+}

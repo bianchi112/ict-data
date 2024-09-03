@@ -1,0 +1,9 @@
+package test.nested;
+
+public class Fmap {
+	// 상수 필드를 멤버로 가질 수 있음
+	// public static final 자료형 필드명 = 초기값;
+	
+	// 추상메소드만 멈베로 가질 수 있음
+	// public abstract 반환자료형 메소드명(자료형 매개변수, ....);
+}

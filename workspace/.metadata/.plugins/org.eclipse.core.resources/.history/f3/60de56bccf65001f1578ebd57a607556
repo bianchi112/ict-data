@@ -1,0 +1,10 @@
+# resources/query.properties
+# employee table crud query file
+# text file encooding=utf-8
+selectall=select * from employee
+selectone=select * from employee where emp_id = ?
+insert=insert into employee (emp_id, emp_name, emp_no, email, phone, job_id, salary, bonus_pct, marriage, mgr_id, hire_date, dept_id) values (seq_empid.nextval, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+update=update employee set salary = ?, bonus_pct = ?, where emp_id = ?
+delete=delete from employee where emp_id = ?
+selectjob=select * from employee where dept_id = ?
+selectdept=

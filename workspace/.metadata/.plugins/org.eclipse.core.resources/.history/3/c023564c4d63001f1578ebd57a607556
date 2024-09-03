@@ -1,0 +1,10 @@
+package testCollectioncollection.start;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// Collection (컬렉션 프레임워크) 
+
+	}
+
+}

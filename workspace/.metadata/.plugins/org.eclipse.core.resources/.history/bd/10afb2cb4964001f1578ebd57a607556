@@ -1,0 +1,7 @@
+package make.generics;
+
+public class Mygenrics<T> {
+	//배열 처리용 클래스 : 타입이 정해지지 않은 배열 선언
+	private T[] array; // 클래스 사용시 타입을 정함
+
+}

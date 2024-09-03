@@ -1,0 +1,10 @@
+package collection.model.vo;
+
+public class Book implements java.io.Serializable{
+	private static final long serialVersionUID = 2847012411436955499L;
+	
+	private String title; // 도서제목
+	private int price; // 도서가격
+	
+	public Book() {}
+}

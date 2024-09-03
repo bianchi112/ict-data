@@ -1,0 +1,139 @@
+package collection.controller;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+
+public class SetSample {
+
+	@SuppressWarnings("removal")
+	public void testHashSet() {
+		HashSet hset = new HashSet(); // 저장공간 : 16, 확장비율 : 0.75
+//		Set hest2 = new HashSet();
+//		Collection hset3 = new HashSet();
+
+		// 객체(instance) 만 저장할 수 있다.
+		hset.add(new String("java"));
+		hset.add(Integer.valueOf(120));
+		hset.add(Double.valueOf(32.5));
+		hset.add("oracle"); // Auto Boxing : data => object
+		hset.add(345);		// Auto Boxing : data => object
+		hset.add(45.6);		// Auto Boxing : data => object
+		hset.add(new User("user007", "pass007", "hdrlfehd"));
+		
+		// 저장 순서 유지 안 됨
+		System.out.println(hset); // hest.toString() 작동됨
+		System.out.println("저장된 객체수 : " + hset.size());
+		
+		// Set 은 중복 저장 허용 안 함 (중복 검사 기능 내장되어 있음)
+		hset.add("oracle"); // 중복 저장 무시됨
+		hset.add(345);
+		
+		System.out.println(hset); // hest.toString() 작동됨
+		System.out.println("저장된 객체수 : " + hset.size());
+		
+		// 제거
+		hset.remove("oracle");
+		
+		System.out.println(hset); // hest.toString() 작동됨
+		System.out.println("저장된 객체수 : " + hset.size());
+		
+		// Set 은 저장순서가 없으므로, 하나씩 저장된 객체를 꺼내는 기능이 없음
+		// 방법1 : toArray() 로 Object[] 로 바꾸어서 하나씩 다루거나
+		// 방법2 : interator() 로 저장된 객체에 대한 목록을 만들어서, 목록으로 하나씩 꺼내도록 처리함
+		
+		System.out.println("\n toArray() 로 연속 처리 -----------------");
+		// Set => Object[] toArray()
+		Object[] array = hset.toArray();
+		for(Object obj : array) {
+			System.out.println(obj); // 오버라이딩된 toString() 실행됨
+		}
+		
+		System.out.println("\n Iterator 로 연속 처리 -----------------------");
+		Iterator iter = hset.iterator();
+		while(iter.hasNext()) {
+			Object ref = iter.next();
+			System.out.println(ref);
+		}
+		
+		// 저장 공간 비우기
+		hset.clear();
+		System.out.println(hset.isEmpty()); //true
+		System.out.println(hset.size());
+		
+	} // testHashSet()
+	
+	public void testLinkedHashSet() {
+		// HsahSet 의 후손(sub) 클래스
+		// 중복검사 기능 있음, 저장 순서가 유지됨
+		LinkedHashSet linkSet = new LinkedHashSet();
+		
+		linkSet.add("apple");
+		linkSet.add(123);
+		linkSet.add(3.45);
+		linkSet.add(123); // 중복 저장 안됨
+		linkSet.add(new User("user002", "pass002", "이순신"));
+		
+		System.out.println(linkSet); // 저장 순서 유지 확인
+		System.out.println(linkSet.size()); // 4
+		
+		System.out.println("\n toArray() ---------------------");
+		
+		System.out.println("\n iterator() --------------------");
+		Iterator objIter = linkSet.iterator();
+		while(objIter.hasNext()) {
+			Object obj = objIter.next();
+			System.out.println(obj);
+		}
+	} // testLinkedHashSet()
+	
+} // SetSample
+
+// 한 자바 파일 안에서 클래스 여러 개 추가 작성할 수도 있음
+// 파일명.java 로 지정되는 클래스만 public 붙일 수 있음
+// 파일명으로 사용되는 클래스를 제외한 다른 클래스에는 public 사용 못 함 => default class
+// default : package private (해당 패키지 내에 있는 클래스끼리만 사용 가능함, 패키지 밖 사용 불가능)
+
+class User {
+	private String userId;
+	private String userPwd;
+	private String userName;
+	
+	public User(String userId, String userPwd, String userName) {
+		super();
+		this.userId = userId;
+		this.userPwd = userPwd;
+		this.userName = userName;
+	}
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public String getUserPwd() {
+		return userPwd;
+	}
+
+	public void setUserPwd(String userPwd) {
+		this.userPwd = userPwd;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", userPwd=" + userPwd + ", userName=" + userName + "]";
+	}
+	
+}
+

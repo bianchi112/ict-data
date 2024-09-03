@@ -1,0 +1,23 @@
+package book.mvc.model.vo;
+
+public class Book {
+    private int bookId;
+    private String title;
+    private String author;
+    private String publisher;
+    private Date publishDate;
+    private double price;
+
+    public Book() {}
+
+    public Book(int bookId, String title, String author, String publisher, Date publishDate, double price) {
+        this.bookId = bookId;
+        this.title = title;
+        this.author = author;
+        this.publisher = publisher;
+        this.publishDate = publishDate;
+        this.price = price;
+    }
+
+    // Getters and Setters
+}

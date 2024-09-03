@@ -1,0 +1,8 @@
+package employee.model.service;
+
+import employee.model.dao.EmployeeDao;
+
+// Connection 관리와 트랜잭션 관리가 주 목적인 서비스 모델임
+public class EmployeeService {
+	private EmployeeDao edao = new EmployeeDao();
+}

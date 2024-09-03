@@ -1,0 +1,13 @@
+package collection.view;
+
+import java.util.Scanner;
+
+public class Menu {
+	public static void display() {
+		Scanner sc = new Scanner(System.in);
+
+		do {
+			System.out.println("\n*** 컬렉션 사용 테스트 ***\n");
+		} while (true);
+	}
+}

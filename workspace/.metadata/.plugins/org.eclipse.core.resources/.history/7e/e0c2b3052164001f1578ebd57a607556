@@ -1,0 +1,8 @@
+package practice3;
+
+import java.util.HashMap;
+
+public class BookManagerMap {
+	// Fiield
+	private HashMap booksMap;
+}

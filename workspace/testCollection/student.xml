@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Student Data</comment>
+<entry key="101">Student [sno=101, sname=홍길동, kor=85, eng=90, mat=95, tot=270, avg=90]</entry>
+<entry key="102">Student [sno=102, sname=김철수, kor=75, eng=80, mat=82, tot=237, avg=79]</entry>
+<entry key="103">Student [sno=103, sname=이영희, kor=88, eng=92, mat=84, tot=264, avg=88]</entry>
+<entry key="104">Student [sno=104, sname=박수정, kor=91, eng=89, mat=93, tot=273, avg=91]</entry>
+<entry key="105">Student [sno=105, sname=최지훈, kor=78, eng=85, mat=88, tot=251, avg=83]</entry>
+</properties>

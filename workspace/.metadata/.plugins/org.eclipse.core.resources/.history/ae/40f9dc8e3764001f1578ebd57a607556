@@ -1,0 +1,5 @@
+package test.properties;
+
+public class TestProperties {
+	// java.util.Properties 클래스 사용 테스트
+}

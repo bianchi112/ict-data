@@ -1,0 +1,12 @@
+package make.generics;
+
+public class TestMyGenerics {
+
+	public static void main(String[] args) {
+		// MyGenerics<T> 사용 테스트
+		// String 만 취급
+		MyGenerics<String> test1 = new MyGenerics<String>(5);
+
+	}
+
+}

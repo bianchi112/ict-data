@@ -1,0 +1,17 @@
+package collection.controller;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+public class ListSample {
+	
+	public void testArrayList() {
+		// List 계열 ArrayList 사용 테스트
+		ArrayList alist = new ArrayList(); // 기본 10개 저장
+//		List alist2 = new ArrayList();
+//		Collection alist3 = new ArrayList();
+		
+		// 객체만 저장함, 저장 순서가 유지됨
+	}
+}

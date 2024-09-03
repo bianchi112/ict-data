@@ -1,0 +1,5 @@
+package make.generics;
+
+public class Mygenrics<T> {
+
+}

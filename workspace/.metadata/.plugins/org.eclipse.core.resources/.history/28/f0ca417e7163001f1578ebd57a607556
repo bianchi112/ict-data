@@ -1,0 +1,6 @@
+package collection.model.vo;
+
+public class Book implements java.io.Serializable{
+	private static final long serialVersionUID = 2847012411436955499L;
+	
+}

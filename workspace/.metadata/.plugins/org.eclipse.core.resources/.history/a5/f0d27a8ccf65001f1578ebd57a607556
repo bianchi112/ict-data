@@ -1,0 +1,10 @@
+# resources/query.properties
+# employee table crud query file
+# text file encooding=utf-8
+selectall=select * from employee
+selectone=
+insert=
+update=
+delete=
+selectjob=
+selectdept=

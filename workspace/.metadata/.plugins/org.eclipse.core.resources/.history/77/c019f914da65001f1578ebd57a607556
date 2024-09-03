@@ -1,0 +1,5 @@
+package book.mvc.view;
+
+public class BookMenu {
+
+}

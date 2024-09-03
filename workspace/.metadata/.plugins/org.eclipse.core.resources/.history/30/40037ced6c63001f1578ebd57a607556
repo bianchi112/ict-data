@@ -1,0 +1,8 @@
+package collection.controller;
+
+public class ListSample {
+	
+	public void testArrayList() {
+		
+	}
+}

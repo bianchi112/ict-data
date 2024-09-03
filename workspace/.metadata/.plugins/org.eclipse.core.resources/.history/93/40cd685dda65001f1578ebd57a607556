@@ -1,0 +1,28 @@
+package book.mvc.model.dao;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+import book.mvc.model.vo.Book;
+import common.JDBCTemp;
+
+public class BookDao {
+
+    public int insertBook(Book b) {
+        String query = "INSERT INTO Book VALUES(seq_bid.NEXTVAL, ?, ?, ?, ?, ?)";
+        try (Connection conn = JDBCTemp.getInstance().getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(query)) {
+            pstmt.setString(1, b.getTitle());
+            pstmt.setString(2, b.getAuthor());
+            pstmt.setString(3, b.getPublisher());
+            pstmt.setDate(4, b.getPublishDate());
+            pstmt.setDouble(5, b.getPrice());
+            return pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    // Other methods: updateBook, deleteBook, selectAllBooks, searchBookTitle, selectBook
+}

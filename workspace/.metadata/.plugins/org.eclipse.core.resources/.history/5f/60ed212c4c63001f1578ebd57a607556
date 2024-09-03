@@ -1,0 +1,7 @@
+package collection.view;
+
+public class Menu {
+	public static void display() {
+
+	}
+}

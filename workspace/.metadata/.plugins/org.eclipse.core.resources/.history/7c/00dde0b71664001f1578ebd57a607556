@@ -1,0 +1,57 @@
+package collection.controller;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+
+public class MapSample {
+
+	public void testHashMap() {
+		// HashMap 사용 테스트
+		HashMap hmap = new HashMap(); // 기본 16개 객체 저장, 확장비율 : 0.75
+//		Map hmap2 = new HashMap(); // 다형성  사용
+		
+		// 저장시 키객체와 값 객체 두개를 쌍(엔트리라고 함)으로 저장함
+		hmap.put(new String("one"), Integer.valueOf(1230));
+		hmap.put(2, "java"); // auto boxing : data => Object 로 자동변환되어서 저장됨
+		hmap.put("three", 36.9);
+		hmap.put(4, "jdbc");
+		
+		System.out.println(hmap); // 오버라이딩된 hmap.toString() 실행됨
+		// 키는 Set, 값은 List 구조임 : 저장 순서 유지 안됨
+		
+		hmap.put(2,  "oracle"); // 기존의 저장된 키에 연결된 값 객체를 바꿈 : replace(key, value)와 같음
+		System.out.println(hmap);
+		
+		hmap.put("two", 1230);  // 값 객체는 중복 저장됨
+		System.out.println(hmap);
+		
+		// 저장된 객체들 중 하나만 조회할 경우 : get(key) : value 리턴
+		System.out.println(hmap.get(2));
+		
+		System.out.println("size : " + hmap.size());
+		
+		// 저장된 객체 삭제 : remove(key)
+		hmap.remove("one");
+		System.out.println(hmap);
+		System.out.println("size : " + hmap.size());
+		
+		// 맵에 저장된 객체들을 연속으로 처리한다면, 기본 제공되는 메소드는 없음
+		// 해결방법 1 : key들을 Set으로 바꿈 : keySet() 사용 => iterator() 로 key 목록을 만듦
+		System.out.println("keySet() => iterator()로 키목록 만들어서 연속 처리 ----------------");
+		Set keys = hmap.keySet(); // 맵들의 키들만 Set  으로 바꿈
+		Iterator keyIter = keys.iterator(); // 키에 대한 Set으로 목록 만들기함
+		while(keyIter.hasNext()){
+			Object key = keyIter.next();
+			Object value = hmap.get(key);
+			System.out.println(key + "=" + value);
+		}
+		
+		// 해결방법 2 :  값 객체들을 Collection 으로 바꿈 : valuess() 사용 => for each 문으로 연속 처리
+		System.out.println("values() => Collection 으로 값 객체들만 변환 => for each 문 사용 -----");
+		Collection values = hmap.values();
+		// for each 문 : 객체배열과 컬렉션 연속 처리에 사용하는 루프문임
+		
+	}
+}

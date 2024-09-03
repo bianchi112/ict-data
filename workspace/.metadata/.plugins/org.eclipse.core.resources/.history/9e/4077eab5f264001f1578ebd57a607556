@@ -1,0 +1,6 @@
+package employee.controller;
+
+// mvc 패턴 : view(사용자화면)
+public class EmployeeController {
+
+}

@@ -1,0 +1,14 @@
+package book.mvc.controller;
+
+import book.mvc.model.service.BookService;
+import book.mvc.model.vo.Book;
+
+public class BookController {
+    private BookService service = new BookService();
+
+    public void insertBook(Book b) {
+        service.insertBook(b);
+    }
+
+    // Other methods: updateBook, deleteBook, searchBook, searchBookTitle, selectAll
+}

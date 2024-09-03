@@ -1,0 +1,22 @@
+package test;
+
+public class TestDBConnect {
+	
+	public TestDBConnect() {}
+	
+	public void oracleConnect() {
+		// 1. 오라클 jdbc 드라이브 등록
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package make.generics;
+
+public class TestMyGenerics {
+
+	public static void main(String[] args) {
+		// MyGenerics<T> 사용 테스트
+		// String 만 취급
+		MyGenerics<String> test1 = new MyGenerics<String>(5);
+		try {
+			test1.add("java");
+			test1.add("linux");
+			test1.add("oracle");
+
+			for (int i = 0; i < test1.getCount(); i++) {
+				System.out.println(test1.get(i));
+			}
+		} catch (SizeOverflowException e) {
+			e.printStackTrace();
+		}
+		
+		// Book 만 취급
+		
+
+	}
+
+}

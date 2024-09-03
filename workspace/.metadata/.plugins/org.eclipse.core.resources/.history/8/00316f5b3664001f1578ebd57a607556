@@ -1,0 +1,12 @@
+package test.properties;
+
+import java.util.Properties;
+
+public class PropertiesSample {
+	public void test1() {
+		// Properties 사용 : 
+		// 애플리케이션의 설정 값들을  저장하고, 실행시 읽어 들여서 프로그램에 적용하는 용도로 사용할 때
+		// 주로 이용하는 클래스임
+		Properties prop = new Properties(); // 설정값 저장 용도로 사용함
+	}
+}

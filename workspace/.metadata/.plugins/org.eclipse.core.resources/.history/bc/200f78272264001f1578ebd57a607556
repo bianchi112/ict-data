@@ -1,0 +1,31 @@
+package practice3;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class BookManagerMap {
+	// Fiield
+	private HashMap booksMap; // 도서번호를 키로  사용함
+	
+	public BookManagerMap() {
+		booksMap  = new HashMap();
+	}
+	
+	public  BookManagerMap(Map map) {
+		booksMap  = new HashMap(map);
+	}
+	
+	//Method
+//		+ putBook(book:Book) : void	//맵에 객체 추가, 도서번호를 키로 사용함
+//		+ removeBook(key:String) : void	//맵에서 객체 제거
+//		+ searchBook(String bTitle) : String	: entrySet() 사용
+//			//도서명이 일치하는 객체의 도서번호를 리턴
+//			//도서명이 객체가 맵에 없으면, null 리턴함
+//		+ displayAll():void		//맵정보 모두 출력 : keySet() 사용
+//		+ sortedBookMap():Book[]
+//			// 해당 도서명순으로 오름차순정렬해서 객체배열 리턴함
+//		+ printBookMap(Book[] br) : void
+//			//객체 배열 출력, for each 문 사용
+//		+ printBook(key:String) : void	//
+
+}

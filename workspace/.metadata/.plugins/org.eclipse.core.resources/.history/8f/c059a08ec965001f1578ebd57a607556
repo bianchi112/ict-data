@@ -1,0 +1,30 @@
+package employee.model.service;
+
+import static common.JDBCTemplate.*;
+//JDBCTemplate 이 가진 모든 static 메소드를 임포트
+
+import java.sql.Connection;
+import java.util.ArrayList;
+
+import employee.exception.EmployeeException;
+import employee.model.dao.EmployeeDao;
+import employee.model.dto.Employee;
+
+// Connection 관리와 트랜잭션 관리가 주 목적인 서비스 모델임
+public class EmployeeService {
+	private EmployeeDao edao = new EmployeeDao();
+	
+	public ArrayList<Employee> selectAll() throws EmployeeException{
+		Connection conn = getConnection();
+		ArrayList<Employee> list = edao.selectAll(conn);
+		close(conn);
+		return list;
+	}
+	
+	public ArrayList<Employee> selectAll() throws EmployeeException{
+		Connection conn = getConnection();
+		ArrayList<Employee> list = edao.selectAll(conn);
+		close(conn);
+		return list;
+	}
+}

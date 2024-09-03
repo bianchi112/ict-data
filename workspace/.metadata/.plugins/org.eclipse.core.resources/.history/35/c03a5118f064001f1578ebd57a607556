@@ -1,0 +1,6 @@
+package employee.model.dto;
+
+// domain model : 테이블의 한 행(domain, record)의 각 컬럼값 저장용 객체
+public class Employee {
+
+}

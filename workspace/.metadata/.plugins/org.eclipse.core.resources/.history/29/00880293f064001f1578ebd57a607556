@@ -1,0 +1,9 @@
+package employee.model.dto;
+
+// domain model : 테이블의 한 행(domain, record)의 각 컬럼값 저장용 객체 (vo, dto, entity, do, bean)
+// dto (data transfer object) : 데이터 전송용 객체 (값을  담아서 다른 클래스로 전달되는 객체를 말함)
+// 작성원칙 : 
+// 1. 반드시 직렬화할 것
+public class Employee implements java.io.Serializable{
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;exception.silsub1.CharacterProess.java&apos; to &apos;CharacterProcess.java&apos;&#x0D;&#x0A;- Original project: &apos;testException&apos;&#x0D;&#x0A;- Original element: &apos;exception.silsub1.CharacterProess.java&apos;&#x0D;&#x0A;- Renamed element: &apos;exception.silsub1.CharacterProcess.java&apos;" description="Rename compilation unit &apos;CharacterProess.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;exception.silsub1{CharacterProess.java" name="CharacterProcess.java" references="false" stamp="1724377818445" version="1.0"/>
+</session>

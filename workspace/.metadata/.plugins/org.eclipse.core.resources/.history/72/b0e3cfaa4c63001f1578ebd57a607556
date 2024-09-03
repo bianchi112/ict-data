@@ -1,0 +1,19 @@
+package collection.view;
+
+import java.util.Scanner;
+
+public class Menu {
+	public static void display() {
+		Scanner sc = new Scanner(System.in);
+
+		do {
+			System.out.println("\n*** 컬렉션 사용 테스트 ***\n");
+			
+			System.out.println("1. HashSet 사용 테스트");
+			
+			System.out.println("0. 끝내기");
+			
+			System.out.print("");
+		} while (true);
+	}
+}
