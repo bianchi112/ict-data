@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>testVideo</title>
+</head>
+<body>
+<header>
+	<h1>비디오 태그 연습</h1>
+</header>
+<hr>
+<video src=""></video>
+</body>
+</html>

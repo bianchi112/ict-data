@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>testc</title>
+</head>
+<body>
+<header>
+	<hgroup>
+		<h1>인라인 스타일시트 적용 연습 페이지</h1>
+		<h3>태그에 style 속성을 사용해서 직접 css 를 적용하는 방식</h3>
+	</hgroup>
+</header>
+<hr>
+<section>
+	<h4 style="color:red;fone-size:36pt;font-family:궁서체;">인라인 스타일시트는 일회용임</h4>
+	<p>
+		모든 html 태그에 사용할 수 있는 속성이 있음 <br>
+		<ul>
+		  	<li>id="아이디명" : 아이디명은 문서 안에서 유일한 이름이어야 함</li>
+		  	<li>class="클래스명" 또는 class="클래스명 하위클래스명" : 
+		  	여러 태그에 같은 클래스명 사용할 수 있음, 하나의 그룹으로 묶어줄 때 이용함</li>
+		  	<li>  </li>
+		  	<li>  </li>
+		</ul>
+	</p>
+</section>
+</body>
+</html>

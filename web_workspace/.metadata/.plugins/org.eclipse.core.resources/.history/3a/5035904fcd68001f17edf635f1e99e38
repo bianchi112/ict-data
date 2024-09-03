@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>testc</title>
+</head>
+<body>
+<header>
+	<hgroup>
+		<h1>인라인ㄴ 스타일시트 적용 연습 페이지</h1>
+	</hgroup>
+</header>
+</body>
+</html>

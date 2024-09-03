@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- 
+	이 문서에 사용된 html 의 종류를 표시하는 태그임
+	html 은 html5 버전을 사용함을 의미함 => 웹표준 기술임
+ -->
+<html> <!-- 웹 문서의 시작을 뜻하는 태그임 -->
+<!-- 
+	html 시작태그에 사용할 수 있는 속성(attribute | property)
+	lang 속성 : language, 이 문서에 사용되는 언어 지정
+	값 : en(영어), ko(한국어), jp(일본어), ......
+ -->
+<head> <!-- 이 문서의 설정을  지정하는 부분을 표시하는 태그임 -->
+<meta charset="UTF-8">
+<title>testh</title>
+</head>
+<body> <!-- 웹 브라우저에 보여지는 내용을 작성하는 영역표시 태그임 -->
+&nbsp;	HTML Test Project <br> <!-- break 태그, 줄바꿈 태그임 -->
+	2024 8월 13일 화요일 작성
+</body>
+</html> <!-- 웹 문서의 끝을 의미하는 html 닫기태그임 -->

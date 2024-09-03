@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>orderform</title>
+</head>
+<body>
+	<header>
+		<h1>주문서 폼</h1>
+	</header>
+	<hr>
+	<form action="">
+	<p><label>고객명: <input type="text" name="cname"></label></p> 
+	<p><label>전화번호: <input type="text"></label> </p> 
+	<p><label>E-mail: <input type="email"></label></p> 
+
+	<fieldset>
+		<lagend>피자사이즈</lagend>
+		<p><label><input type="radio"> Small </label> </p> 
+		<p><label><input type="radio"> Medium </label> </p> 
+		<p><label><input type="radio"> Large</label> </p> 
+	</fieldset>
+	토핑선택 <br> <br>
+	<input type="checkbox"> 베이컨 <br> <br>
+	<input type="checkbox"> 치즈 <br> <br>
+	<input type="checkbox"> 양파 <br> <br>
+	<input type="checkbox"> 버섯 <br> <br>
+		
+	희망배송시간: <input type="time"> <br><br>
+	배송요청사항: <textarea rows="3" cols="30"></textarea><br><br>
+	<input type="submit" value="주문하기">
+	</form>
+</body>
+</html>

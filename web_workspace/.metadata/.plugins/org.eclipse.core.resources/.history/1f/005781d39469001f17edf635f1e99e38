@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sample1</title>
+</head>
+<body>
+<h1>자바스크립트 작성 위치와 작성 방법</h1>
+<p id="demo1">
+inline 방식 : 시작  태그에 on이벤트이름 속성을 추가하고, 속성 값에 자바스크립트 소스를 바로 작성하는 방식<br>
+</p>
+</body>
+</html>

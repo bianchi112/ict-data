@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="/testc/resources/css/selector.css">
+</head>
+<body>
+<h1>CSS3 Selector test page</h1>
+<hr>
+<h2>CSS3 선택을 위한 슈도(SUDO) 클래스 사용 연습</h2>
+<ol>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+	<li>6</li>
+	<li>7</li>
+	<li>8</li>
+</ol>
+<hr style="clear:both;">
+<div class="mcol"></div>
+</body>
+</html>

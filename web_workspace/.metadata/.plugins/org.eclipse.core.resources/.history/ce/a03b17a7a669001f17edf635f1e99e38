@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sample2</title>
+<script type="text/javascript" src="/testj/resources/js/main.js"></script>
+</head>
+<body>
+<h1>자바스크립트에서 데이터 출력하는 방법</h1>
+<ol>
+	<li>자바스크립트 내장객체 중 최상위 객체인 window 객체가 제공하는 alert() 메소드를 사용하는 방법</li>
+	<button onclick="testAlert();">클릭! alert() 에 출력</button>
+	<hr>
+	
+	<li>window 객체의 후손인 document 객체가 제공하는 write() 또는 writeln() 메소드로 body 영역에 
+	출력하는 방법</li>
+	<script type="text/javascript">
+		document.write("write() 메소드로 구문 작성 위치에 바로 출력함");
+	</script>
+	<hr>
+	
+	<li>태그 엘리먼트에 innerHTML 필드(속성)를 사용해서 태그 안에 값을 출력하는  방법</li>
+	<button onclick="this.innerHTML='*^^*';">클릭하면 글자가 바뀝니다.</button>
+	<hr>
+		
+	<li>브라우저가 제공하는 개발자도구의 콘솔뷰에 출력하는 방법</li>
+	<button onclick="printConsole();">콘솔뷰에 출력 확인</button>
+	<script type="text/javascript">
+		  function printConsole(){
+			  // 내장객체는 자바스크립트 내장객체와 브라우저 내장객체가 있음
+			  // 브라우저 내장객체인 console 의 log() 메소드를 이용함
+			  console.log("개발자도구의 콘솔에 메세지 출력 확인!")
+			  
+			  var name = "홍길동";
+			  var age = 29;
+			  // 자바스크립트에서는 문자하나와 문자열 구분 없음
+			  // 문자, 문자열 표기에 '문자|문자열값' 또는 "문자|문자열값" 둘다 사용 가능함
+			  console.log('age : ' + age);
+			  console.log('name : ' + name);
+		  }
+	</script>
+	<hr>
+	
+	<li>form 태그의 입력양식인 input 태그의 값으로 출력하는 방법</li>
+	<input type="number" id="num1" vlaue="0" min="0" max="100"> + 
+	<input type="number" id="num2" vlaue="0" min="0" max="100"> = <input>
+</ol>
+</body>
+</html>

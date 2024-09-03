@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>productform</title>
+</head>
+<body>
+<header>
+	<h1>상주발주 폼</h1>
+</header>
+<form action="result.html"  method="post">
+	<fieldset>
+		<legend>납품자정보</legend> 
+		<ol>
+			<li>
+				<label for="name">납품자명:</label>
+				<input type="text" placeholder="name" name="name" required>
+			</li>
+			<li>
+				<label>email:</label>
+				<input type="email" placeholder="answs@naver.com">
+			</li>
+			<li>
+				<label>홈페이지: </label>
+				<input type="text" placeholder="http://">
+			</li>
+		</ol>
+	</fieldset>
+	<fieldset>
+		<legend>납품 정보</legend>
+			<ul>
+				<li>
+					상품명: <input type="text" >
+				</li>
+				<li>
+					납품수량: <input type="number" placeholder="최소100">
+				</li>
+				<li>
+					납품등급: <input type="range" >
+				</li>
+				<li>
+					기타사항: <textarea></textarea>
+				</li>
+			</ul>
+	</fieldset>
+<input type="submit" value="send maessage">
+</form>
+</body>
+</html>

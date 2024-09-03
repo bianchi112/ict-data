@@ -1,0 +1,46 @@
+/**
+ * main.js
+ * 2024-09-03 작성
+ */
+
+// 전역변수 선언 : 함수 밖에서 선언된 변수
+// 선언된 위치 아래쪽에서는 모두 사용 가능함
+// var 변수명 = 값;
+var flag = false;
+
+function toggleImage() {
+	// 지역변수 : 함수 안에서 선언된 변수, 선언된 블럭 {} 밖에서는 사용 못  함
+	var img = document.getElementById("image1");
+
+	if (!flag) { // if(flag == flalse)
+		img.src = "/testj/resources/images/Android.gif"
+		flag = true;
+	} else { // flag == true
+		img.src = "/testj/resources/images/button.jpg";
+		flag = false;
+	}
+}
+
+function changeCSS() {
+	// 글자색, 테두리선, 글자크기, 배경색 변경 처리함
+	var element = document.getElementById("demo3");
+
+	element.style.color = "#ff00cc";
+	element.style.border = "3px double black";
+	element.style.fontSize = "24pt";
+	element.style.backgroundColor = "yellow";
+}
+
+function testAlert() {
+	//window.alert("main.js 안에 작성된 testAlert() 함수 실행됨");
+	// 최상위 객체인 window 는 메소드 사용시 생략할 수 있음
+	alert("main.js 안에 작성된 testAlert() 함수 실행됨");
+}
+
+
+
+
+
+
+
+

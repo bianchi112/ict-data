@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<header>
+	<h1>TEST CSS Project</h1>
+	<nav>
+		<ul>
+			<li><a href="/testc">인라인스타일시트연습</a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+		</ul>
+	</nav>
+</header>
+<hr>
+<section></section>
+<section></section>
+<hr>
+<footer>
+copyright@test.css
+</footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sample2</title>
+<script type="text/javascript" src="/testj/resources/js/main.js"></script>
+</head>
+<body>
+<h1>자바스크립트에서 데이터 출력하는 방법</h1>
+<ol>
+	<li>자바스크립트 내장객체 중 최상위 객체인 window 객체가 제공하는 alert() 메소드를 사용하는 방법</li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/*
+ selector.css
+ 	selector.html 에 적용하는 스타일시트 파일
+ 	CSS3에 추가된 새로운 선택기능 테스트용
+*/
+
+/* 글꼴 파일 등록 */
+@font-face {
+	font-family: TESTF; /* 글꼴이름은 임의대로 지정함 */
+	src: url("/testc/resources/fonts/FZSong_Super.TTF") format("truetype");
+}
+
+li{
+	list-style: none;
+	margin-right: 30px;
+	float: left;
+	font-size: 48pt;
+	font-family: TESTF; /* 등록한 글꼴 사용 */
+}
+
+li:nth-child(odd) { /* 홀수번째 li 태그들을 선택, 짝수는 even 사용함 */
+	color: #900; /* #RRGGBB 16진수 색상표현, 같은 값이 두번씩 반복될때는 한개만 표현해도 됨*/
+	/* #990000 == #900 */
+	font-weight: bold;
+}
+
+li:nth-child(4n) { /* 4의 배수번째 li  태그들을 선택 */
+	color: blue;
+	background-color: hsl(200, 50%, 85%);
+	/* hue : 색상환의 각도, saturation: 채도(%), lightness : 명도(%) */
+}
+
+li:nth-child(2) {
+	color: green;
+	font-family: 궁서체;
+}
+
+/* 다단 구성 */
+div.mcol {
+	column-count: 3;
+	column-gap: 20px;
+	column-rule: 1px dotted #f06; /* #ff0066 */
+	-webkit-column-count: 3;
+	-webkit-column-gap: 20px;
+	-webkit-column-rule: 1px dotted #f06; /* #ff0066 */
+	-moz-column-count: 3;
+	-moz-column-gap: 20px;
+	-moz-column-rule: 1px dotted #f06; /* #ff0066 */
+}
+
+*:not(img) { /* 선택할태그명:not(제외할태그명), img 태그를 제외한 모든 태그를 선택하라는 의미임 */ 
+	
+}
+
+
+
+
+
+
+
+

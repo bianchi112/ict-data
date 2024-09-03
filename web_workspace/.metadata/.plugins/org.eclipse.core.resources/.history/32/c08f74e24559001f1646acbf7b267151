@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- 
+	이 문서에 사용된 html 의 종류를 표시하는 태그임
+	html 은 html5 버전을 사용함을 의미함 => 웹표준 기술임
+ -->
+<html> <!-- 웹 문서의 시작을 뜻하는 태그임 -->
+<!-- 
+	html 시작태그에 사용할 수 있는 속성(attribute | property)
+	lang 속성 : language, 이 문서에 사용되는 언어 지정
+	값 : en(영어), ko(한국어), jp(일본어), ......
+ -->
+<head> <!-- 이 문서의 설정을  지정하는 부분을 표시하는 태그임 -->
+<meta charset="UTF-8">
+<title>testh</title>
+</head>
+<body> <!-- 웹 브라우저에 보여지는 내용을 작성하는 영역표시 태그임 -->
+&nbsp; &nbsp; &nbsp;	HTML Test Project <br> <!-- break 태그, 줄바꿈 태그임 -->
+	2024 8월 13일 화요일 작성 <br>
+<hr color ="red" size="3" width="50%" align="center" noshade="noshade"> <!--  단일 태그임 (닫기 태그가 없는 태그) -->
+
+<!-- horizental 줄임말, 가로선을 표현하는 태그임, 내용을 구분하기 위해 사용함 
+속성 : 
+color="색이름 | RGB(RED 0~255, GREEN 0~255, BLUE 0~255) | #RGB16진수"
+size="선굵기" 단위가 pixel 임
+width="선의 가로너비" 단위는 pixce, % 사용가능
+align="선의 정렬위치", left(기본) | center | right
+noshade="noshade" , 속성만 사용할 수 있음, 음영효과 없앰
+-->
+<header> <!-- 이 페이지의 머리글 영역을 표시할 때 사용함 -->
+<!-- 이 페이지의 로고(제목), 메뉴 네비게이션 바 등을 표현함 -->
+<!-- 제목글자 표시용 태그 : h숫자 (h1:가장큼 ~ h6:가장 작음), 제목표시하고 자동 줄바꿈 됨-->
+<h1>제목글자 h1</h1> <!-- headline 줄임말 -->
+<h2>제목글자 h2</h2>
+<h3>제목글자 h3</h3>
+<h4>제목글자 h4</h4>
+<h5>제목글자 h5</h5>
+<h6>제목글자 h6</h6>
+<hr>
+<nav> <!-- navigation 줄임말, 메뉴 네비게이션 영역 지정시 사용함 -->
+	<a>이미지 태그 연습</a>
+	<!-- anchor 줄임말, 글자 클릭시 지정한 연결 페이지가 나타나게 링크 설정함 
+		 속성 :
+		 href="경로/대상파일명.확장자" , 필수속성임
+		 	   상대경로 사용해도 됨 => 현재 문서를 기준으로, 대상을 찾아가는 경로임
+		 	   	  href="views/test/testImg.html
+		 	   절대경로 사용해도 됨 => 무조건 content directory (context root)에서 시작함
+	-->
+</nav>
+</header>
+<hr>
+<section></section>
+<article></article>
+<hr>
+<footer></footer>
+	
+</body>
+</html> <!-- 웹 문서의 끝을 의미하는 html 닫기태그임 -->

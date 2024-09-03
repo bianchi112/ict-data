@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>testList</title>
+</head>
+<body>
+<header>
+	<hgroup>
+		<h1>목록 만들기 태그 연습</h1>
+		<h3>목록 만들기 태그 : ol(order list), ul(unorder list), dl(definition list)</h3>
+	</hgroup>
+</header>
+<hr>
+<div id="d1">
+	<h4>ol 태그 : 순번이 있는 목록 만들때 사용</h4>
+	<ol type="I"> <!-- 순번 종류 : 1(기본), A, a, I, i 변경할 수 있음 -->
+		<li>java</li>
+		<li>oracle</li>
+		<li>jdbc</li>
+		<li>web front : html, css, javascript, jquery, ajax, open api</li>
+		<li>web back  : servlet, jsp, el & jstl</li>
+		<li>spring & mybatis framework</li>
+	</ol>
+</div>
+<div id="d2">
+	<h4>ol 태그 : 순번이 있는 목록 만들때 사용</h4>
+		<ol type="I"> <!-- 순번 종류 : 1(기본), A, a, I, i 변경할 수 있음 -->
+			<li>java</li>
+			<li>oracle</li>
+			<li>jdbc</li>
+			<li>web front : html, css, javascript, jquery, ajax, open api</li>
+			<li>web back  : servlet, jsp, el & jstl</li>
+			<li>spring & mybatis framework</li>
+		</ol>
+</div>
+<div id="d3"></div>
+</body>
+</html>

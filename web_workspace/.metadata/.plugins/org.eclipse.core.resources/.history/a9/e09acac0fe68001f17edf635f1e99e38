@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* transform.css
+	transform.html 에 사용할 스타일시트 파일
+	transform,  transition 속성 테스트용
+*/
+
+* { margin: 0; padding:0; } /* 모든 태그들의 바깥여백, 안쪽여백 모두 없앰 */
+

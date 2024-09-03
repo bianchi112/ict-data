@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>orderform</title>
+</head>
+<body>
+	<header>
+		<h1>주문서 폼</h1>
+	</header>
+	고객명: <input type="text"> <br> <br> 
+	전화번호: <inputtype="text"> <br> <br> 
+	E-mail: <input type="email"><br><br>
+
+	피자사이즈 <br> <br>
+	<input type="radio"> Small <br> <br>
+	<input type="radio"> Medium <br> <br>
+	<input type="radio"> Large <br> <br>
+		
+	토핑선택 <br> <br>
+	<input type="checkbox"> 베이컨 <br> <br>
+	<input type="checkbox"> 치즈 <br> <br>
+	<input type="checkbox"> 양파 <br> <br>
+	<input type="checkbox"> 버섯 <br> <br>
+		
+	희망배송시간: <input type="time"> <br><br>
+	배송요청사항: <input type="textarea"><br>
+	<input type="submit" value="주문하기">
+	
+</body>
+</html>

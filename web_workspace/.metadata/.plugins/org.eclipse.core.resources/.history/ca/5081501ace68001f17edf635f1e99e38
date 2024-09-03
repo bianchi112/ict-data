@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>testc</title>
+</head>
+<body>
+<header>
+	<hgroup>
+		<h1>인라인 스타일시트 적용 연습 페이지</h1>
+		<h3>태그에 style 속성을 사용해서 직접 css 를 적용하는 방식</h3>
+	</hgroup>
+</header>
+<hr>
+<section>
+	<h4>인라인 스타일시트는 일회용임</h4>
+</section>
+</body>
+</html>

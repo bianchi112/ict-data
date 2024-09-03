@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>testAudio</title>
+</head>
+<body>
+<header>
+	<h1>오디오 태그 연습</h1>
+</header>
+<hr>
+<h3>웹표준 이전 오디오 재생</h3>
+</body>
+</html>

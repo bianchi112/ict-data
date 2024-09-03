@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>testc</title>
+</head>
+<body>
+<header>
+	<h1>위치 관련 스타일 속성 연습 페이지</h1>
+</header>
+<p id="area1">
+position 속성은 태그의 위치를 어떻게 적용할지 방식을 지정하는 속성이다.
+적용할 수 있는 값ㅅ은 absolute(절대위치), relative(상대위치)
+</p>
+</body>
+</html>

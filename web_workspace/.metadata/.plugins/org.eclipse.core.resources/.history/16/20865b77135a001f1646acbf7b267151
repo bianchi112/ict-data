@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>testIFrame</title>
+</head>
+<body>
+<header>
+	<h1>플로팅 프레임 태그 연습</h1>
+</header>
+<hr>
+<p> <!-- paragraph 줄임말, 문단 구역을 표시할 때 사용, 속성 : align="left | center | right -->
+</body>
+</html>

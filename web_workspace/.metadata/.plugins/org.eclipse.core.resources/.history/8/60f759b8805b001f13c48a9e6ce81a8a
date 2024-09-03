@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>orderform</title>
+</head>
+<body>
+	<header>
+		<h1>주문서 폼</h1>
+
+		고객명: <input type="text"> <br> <br> 
+		전화번호: <inputtype="text"> <br> <br> 
+		E-mail: <input type="email"><br>
+
+		<table border="1" width="500" height="500">
+			<tr>
+				<td><input type="radio"> Small</td>
+				<td><input type="radio"> Medium</td>
+				<td><input type="radio"> Large</td>
+			</tr>
+		</table>
+	</header>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/* 전역 스타일 시트 : head 태그 안에 style 태그를 추가하고 문서에  사용된 태그 전체에 대해 css 적용할 때 사용
+	태그 선택이 중요함 => css selecotr 사용함
+	태그선택자 { css-property: 값; 속성: 값; 숫자단위; }
+*/
+
+hr { /* 태그명으로 선택 : 문서 안에 사용된 hr 태그 모두 선택 */
+	clear: both; /* float 속성 적용을 해제함 */
+}
+
+li.menuitem { /* 태그명.클래스명 : 클래스명이 부여된 태그들을 선택*/
+	display: block;
+	background-color: orange;
+	width: 140px;
+	height: 35px;
+}
+</style>
+</head>
+<body>
+<header>
+	<h1>TEST CSS Project</h1>
+	<nav>
+		<ul>
+			<li class="menuitem"><a href="/testc/views/test/inlineStyle.html">인라인스타일시트연습</a></li>
+			<li class="menuitem"><a href="#"></a></li>
+			<li class="menuitem"><a href="#"></a></li>
+			<li class="menuitem"><a href="#"></a></li>
+			<li class="menuitem"><a href="#"></a></li>
+			<li class="menuitem"><a href="#"></a></li>
+			<li class="menuitem"><a href="#"></a></li>
+			<li class="menuitem"><a href="#"></a></li>
+			<li class="menuitem"><a href="#"></a></li>
+			<li class="menuitem"><a href="#"></a></li>
+		</ul>
+	</nav>
+</header>
+<hr>
+<section>
+	<form action="" method="post">
+	<fieldset>
+	<legend>로그인 하세요.</legend>
+		<label for="uid">아이디</label>
+		<input type="text" name="userid" id="uid"> <br>
+		<label for="upwd">암호</label>
+		<input type="password" name="userpwd" id="upwd"> <br>
+		<input type="submit" value="로그인">
+	</fieldset>
+	</form>
+</section>
+<section id=box>
+	<ul>
+		<li>css selector(선택자 연습) </li>
+	</ul>
+</section>
+<hr>
+<footer>
+copyright@test.css
+</footer>
+</body>
+</html>

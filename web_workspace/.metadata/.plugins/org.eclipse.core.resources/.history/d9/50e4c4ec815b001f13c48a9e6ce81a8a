@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>productform</title>
+</head>
+<body>
+<header>
+	<h1>상주발주 폼</h1>
+</header>
+납품자정보 <br><br>
+<li>
+	<ul>
+		납품자명: <input type="text" placeholder="name">
+	</ul>
+</li>
+</body>
+</html>

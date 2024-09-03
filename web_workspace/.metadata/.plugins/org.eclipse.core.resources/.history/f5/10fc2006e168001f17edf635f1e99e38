@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/*
+ selector.css
+ 	selector.html 에 적용하는 스타일시트 파일
+ 	CSS3에 추가된 새로운 선택기능 테스트용
+*/
+
+/* 글꼴 파일 등록 */
+@font-face {
+	font-family: TESTF; /* 글꼴이름은 임의대로 지정함 */
+	src: url("/testc/resources/fonts/FZSong_Super.TTF") format("truetype");
+}

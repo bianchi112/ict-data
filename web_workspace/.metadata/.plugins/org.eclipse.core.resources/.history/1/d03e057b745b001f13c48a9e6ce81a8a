@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>testForm</title>
+</head>
+<body>
+<header>
+	<h1>웹폼 사용 연습</h1>
+</header>
+<hr>
+<div id="login_div">
+<!-- 서버로 입력값을 전송하기 위해서 사용하는 태그 : form 태그
+	 값을 입력받기 위한 input(입력양식) 태그들은 반드시 form 태그안에 작성해야 함
+	 속성 : 
+	 action="서버측의 값받을 클래스명 또는 클래스의  매핑이름"
+	 method="값전송방식", GET | POST
+	 	- GET : 입력값들이 전송시에 브라우저 상단 URL에 보여짐
+	 		request(요청) 객체의 head 영역에 기록이 되기 때문임
+	 	- POST : URL 상에 안 보여짐
+	 		request 객체의 body 영역에 전송값들이 인코딩되어서 기록되기 때문임
+ -->
+<form action="result.html" method="post"> <!-- method 속성 생략시 기본 전송방식 get 이 사용됨 -->
+<table width="250" cellspacing="0" cellpadding="0">
+	<tr><td>
+		<input type="text" name="userid" size="20" maxlength="10" 
+			placeholder="아이디를 10글자 이내로 입력" autofocus autocomplet required>
+	</td></tr>	
+	<tr><td><input type="password" name="userpwd" size="20" maxlength="10"
+		placeholder="암호를 10글자 이내로 입력" required></td></tr>	
+	<tr><td><input type="submit" value="로그인"></td></tr>
+	<!-- form 태그 안에 submit(전송버튼)은 1개만 존재해야 함, 전송을 위해 반드시 필요함 -->	
+</table>
+</form>
+</div>
+<hr>
+<div id="search_div">
+<form action="result.html method="get">
+	<input type="search" name="keyword" size="100"> &nbsp; &nbsp; <input type="submit" value="검색">
+</form>
+</div>
+<hr>
+<div>
+	<h2>html5 에서 새로 추가된 입력양식</h2>
+	<form action="result.html" method ="post">
+		이메일 : <input type="email" name="email"> <br>
+		등록할 웹주소 : <input type="url" name="weburl"> <br>
+		수량 : <input type="number" name="quantity" min="2" max="30" step="2"><br>
+		<fieldset>
+		<legend>주문내용</legend>
+		<ol>
+			<li>
+				<label>상품명 : 
+					<input type="text" size="25" name="pname">
+				</label>
+			</li>
+			<li>
+				<label for="pamount">주문개수 : </label>
+				<input type="number" name="pamount" id="pamount">
+			</li>
+			<li></li>
+			<li></li>
+		</ol>
+		</fieldset>
+		
+		
+		
+		
+		
+		
+		<input type="submit" value="전송">
+	</form>
+</div>
+</body>
+</html>

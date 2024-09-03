@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>sample1</title>
+<style type="text/css">
+p { border: 1px solid blue; }
+</style>
+</head>
+<body>
+<h1>자바스크립트 작성 위치와 작성 방법</h1>
+<p id="demo1">
+inline 방식 : 시작  태그에 on이벤트이름 속성을 추가하고, 속성 값에 자바스크립트 소스를 바로 작성하는 방식<br>
+on이벤트이름 속성은 자바스크립트가 제공하는 속성이며, 모든 태그에 사용할 수 있다.
+</p>
+<button>클릭해 보세요.</button> <br>
+
+</body>
+</html>

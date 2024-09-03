@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>sample1</title>
+<style type="text/css">
+p { border: 1px solid blue; }
+</style>
+</head>
+<body>
+<h1>자바스크립트 작성 위치와 작성 방법</h1>
+<p id="demo1">
+inline 방식 : 시작  태그에 on이벤트이름 속성을 추가하고, 속성 값에 자바스크립트 소스를 바로 작성하는 방식<br>
+on이벤트이름 속성은 자바스크립트가 제공하는 속성이며, 모든 태그에 사용할 수 있다.
+</p>
+<button onclick="document.getElementById('demo1').innerHTML='onclick 속성에 자바스크립트를 직접 작성한 경우의 체스트 확인글!';">클릭해 보세요.</button> <br>
+<hr>
+<h2>internala 방식 : 자바스크립트 소스를 script 태그 안에 함수(function) 단위로 작성해서 실행하는 방식, 
+기본 방식임</h2>
+<p id="demo2">
+script 태그의 작성 위치는 html 태그 밖, head 태그 안(권장), body 태그 안 어디에든 작성 가능함 <br>
+script 태그는 사용 횟수에도 제한이 없음 <br>
+script 태그 안에서 함수(function)를 작성하고, 이 함수를 실행시키려면 태그에 on이벤트속성을 추가해서
+속성값에 실행할 함수명을 기술하면 됨, on이벤트명="실행할함수명(전잘값);"
+</p>
+<button onclick="myFonc1()">클릭해보세요.2</button>
+<script type="text/javascript">
+function myFunc1() {
+	var demo2 = document.getElementById("demo2");
+	window.alert(demo2.innerHTML);
+	demo2.innerHTML = "script 태그 안에 작성된 함수 myFunc1"
+}
+</script>
+</body>
+</html>
