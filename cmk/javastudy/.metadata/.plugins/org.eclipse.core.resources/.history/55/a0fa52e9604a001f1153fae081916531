@@ -1,0 +1,8 @@
+package com.ict.day11;
+
+public class Ex17 {
+	int coffee;
+	int ion;
+	int cola;
+	int price;
+}

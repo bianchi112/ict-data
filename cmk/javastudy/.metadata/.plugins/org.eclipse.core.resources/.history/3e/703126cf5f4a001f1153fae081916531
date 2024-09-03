@@ -1,0 +1,8 @@
+package com.ict.day11;
+
+public class Ex18 {
+	public static void main(String[] args) {
+		Ex17 coffee = new Ex17("coffee", 1800);
+		
+	}
+}

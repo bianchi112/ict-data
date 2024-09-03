@@ -1,0 +1,11 @@
+package com.ict.day12;
+
+public class Ex13 {
+
+	public static void main(String[] args) {
+		System.out.println(Ex12.s2);
+		System.out.println(Ex12.s3);
+
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.ict.day11;
+
+public class MovieReview {
+
+	private String title;
+	private String review;
+	private int count;
+}

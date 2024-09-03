@@ -1,0 +1,10 @@
+package com.ict.day12;
+
+public class Ex11 {
+
+	public static void main(String[] args) {
+		// 객체 생성과 상관없이 static 사용가능
+
+	}
+
+}

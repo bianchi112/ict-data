@@ -1,0 +1,12 @@
+package com.ict.day12;
+
+import java.util.Calendar;
+
+public class Ex16 {
+	// Calendar 클래스
+	
+	// 현재 시간
+	Calendar now = Calendar.getInstance();
+	System.out.println(now);
+	
+}

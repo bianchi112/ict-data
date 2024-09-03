@@ -1,0 +1,20 @@
+package com.ict.day12;
+
+public class Ex06 {
+
+	public static void main(String[] args) {
+		Ex05 t1 = new Ex05();
+		Ex05 t2 = new Ex05("둘리");
+		Ex05 t3 = new Ex05(3);
+		Ex05 t4 = new Ex05("마이콜",42);
+		
+		t1.prn();
+		t2.prn();
+		t3.prn();
+		t4.prn();
+		
+		
+
+	}
+
+}

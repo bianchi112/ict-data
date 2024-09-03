@@ -1,0 +1,12 @@
+package com.ict.day12;
+
+public class Ex01 {
+	private String name;
+	private int kor;
+	private int eng;
+	private int math;
+	private int sum;
+	private double hak;
+	private int rank = 1;
+	
+}

@@ -1,0 +1,45 @@
+package Workshop4;
+
+public class Account {
+    private String account;
+    private int balance;
+    private double interestRate;
+
+    // 기본 생성자
+    public Account() {
+    }
+
+    // 3개의 매개변수를 받는 생성자
+    public Account(String account, int balance, double interestRate) {
+        this.account = account;
+        this.balance = balance;
+        this.interestRate = interestRate;
+    }
+
+    // 계좌정보를 셋팅
+    public void setAccount(String account) {
+        this.account = account;
+    }
+
+    // 계좌정보를 리턴
+    public String getAccount() {
+        return account;
+    }
+
+    // 잔액정보를 리턴
+    public int getBalance() {
+        return balance;
+    }
+
+    // 현재 잔액을 기준으로 이자를 계산
+    public double calculateInterest() {
+        return balance * (interestRate / 100);
+    }
+
+    // 입금을 통해 잔액정보를 증가
+    public void deposit(int money) {
+        balance += money;
+    }
+
+    
+}

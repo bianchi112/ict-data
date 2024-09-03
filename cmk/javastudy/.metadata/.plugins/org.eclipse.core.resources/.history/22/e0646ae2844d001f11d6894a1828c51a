@@ -1,0 +1,17 @@
+package Workshop4;
+
+import java.util.Scanner;
+
+public class Test04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int input = sc.nextInt();
+		if (input < 5 && input > 11) {
+			System.out.println("5~10 사이로 입력해주세요");
+		}
+		
+	}
+
+}

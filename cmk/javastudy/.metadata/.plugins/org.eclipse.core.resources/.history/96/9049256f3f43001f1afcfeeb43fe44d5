@@ -1,0 +1,27 @@
+package com.ict.day04;
+
+import java.util.Scanner;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("첫번째 수 : ");
+		int su1 = sc.nextInt();
+
+		System.out.print("두번째 수 : ");
+		int su2 = sc.nextInt();
+
+		System.out.print("연산자( +, -, *, / ) : ");
+		String op = sc.next();
+		
+		if(su2 == 0 && op.equals("/")) {
+			
+		}else {
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.ict.day11;
+
+public class Ex16 {
+	public static void main(String[] args) {
+		Ex15 t1 = new Ex15();
+		System.out.println("이름 : ");
+		System.out.println("나이 : ");
+		System.out.println("키 : ");
+	}
+}

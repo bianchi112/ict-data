@@ -1,0 +1,14 @@
+package com.ict.day12;
+
+public class Ex08 {
+	// this 와 this([인자])
+	// this : 지역변수와 전역변수의 이름이 같을 때 전역 변수를 지정하려면 this.변수
+	
+	
+	private String name = "희동이";
+	private int age = 3;
+	
+	public Ex08() {
+		System.out.println("기본생성자 : " + this);
+	}
+}

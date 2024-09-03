@@ -1,0 +1,12 @@
+package com.ict.day11;
+
+class MovieReview {
+    String title;
+    String review;
+
+    // Constructor
+    public MovieReview(String title, String review) {
+        this.title = title;
+        this.review = review;
+    }
+}

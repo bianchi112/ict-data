@@ -1,0 +1,53 @@
+package com.ict.day04;
+
+import java.util.Scanner;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		String drink = "";
+		int menu = 0;
+		int input = 0; // 입금액
+		int su = 0;
+		int dan = 0;
+		int sum = 0; // 금액
+		int vat = 0; // 부가세
+		int total = 0; // 총 금액
+		int cahrge = 0; // 잔돈
+
+		System.out.println("--------- 메뉴 ---------");
+		System.out.println("-- 1. 카페모카  (3500) --");
+		System.out.println("-- 2. 카페라떼  (4000) --");
+		System.out.println("-- 3. 아메리카노 (1500) --");
+		System.out.println("-- 4. 과일쥬스  (3000) --");
+		System.out.println("----------------------");
+
+		System.out.print("메뉴를 선택하세요 >>>");
+		menu = scan.nextInt();
+
+		System.out.print("수량을 선택하세요 >>>");
+		su = scan.nextInt();
+
+		System.out.print("입금액을 선택하세요 >>>");
+		input = scan.nextInt();
+
+		// 메뉴에 따라 dan, drink 선택된다.
+		if (menu == 1) {
+			drink = "카페모카";
+			sum = 3500;
+		} else if (menu == 2) {
+			drink = "카페라떼";
+			sum = 4000;
+		} else if (menu == 3) {
+			drink = "아메리카노";
+			sum = 1500;
+		} else if (menu == 4) {
+			drink = "과일쥬스";
+			sum = 3000;
+		}
+
+	}
+
+}

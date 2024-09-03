@@ -1,0 +1,44 @@
+package com.ict.day11;
+
+import java.util.Scanner;
+
+public class Ex06 {
+
+	public static void main(String[] args) {
+		Ex05 coffee = new Ex05();
+		coffee.play01("coffee");
+		coffee.play02(1800);
+		
+		Ex05 ion = new Ex05();
+		ion.play01("ion");
+		ion.play02(2300);
+		
+		Ex05 cola = new Ex05();
+		cola.play01("cola");
+		cola.play02(2000);
+		
+		// 위 3개의 객체를 배열에 넣자
+		// 모두 같은 클래스로 만든 객체 이어야 한다.
+		Ex05[] arr = {coffee, ion, cola};
+		
+		Ex05[] arr2 = new Ex05[3];
+		arr2[0] = coffee;
+		arr2[1] = ion;
+		arr2[2] = cola;
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.print("금액을 투입핫요 >>");
+		int input = scan.nextInt();
+		
+		if(input<1800) {
+			System.out.println("금액이 부족합니다.");
+			System.out.println("잔돈 : " + input);
+		}else {
+			System.out.println("커피\t이온\t탄산");
+		}
+		
+		
+
+	}
+
+}

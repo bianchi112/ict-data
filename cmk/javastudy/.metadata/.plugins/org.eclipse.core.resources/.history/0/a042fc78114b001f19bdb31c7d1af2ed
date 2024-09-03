@@ -1,0 +1,6 @@
+package com.ict.day12;
+
+public class Ex12 {
+	// 인스턴스 변수는 생성자를 이용해서 변수의 초기값을 지정
+	// static 초기화
+}

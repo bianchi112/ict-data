@@ -1,0 +1,30 @@
+package Workshop4;
+
+import java.util.Scanner;
+
+public class Test04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("입력 값: ");
+		int input = sc.nextInt();
+		if (input < 5 && input > 11) {
+			System.out.println("5~10 사이로 입력해주세요");
+		}
+		
+		Calc calc = new Calc();
+		int result = calc.calculate(input);
+		System.out.print("짝수: ");
+		for (int i = 1; i <= input; i++) {
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println();
+        System.out.println("결과: " + result);
+        
+		
+	}
+
+}

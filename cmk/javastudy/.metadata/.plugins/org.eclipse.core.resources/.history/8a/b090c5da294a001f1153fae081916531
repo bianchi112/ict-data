@@ -1,0 +1,17 @@
+package com.ict.day11;
+
+public class Ex06 {
+
+	public static void main(String[] args) {
+		Ex05 coffee = new Ex05();
+		coffee.play01("coffee");
+		coffee.play02(1800);
+		
+		Ex05 ion = new Ex05();
+		ion.play01("ion");
+		ion.play02("ion");
+		
+
+	}
+
+}

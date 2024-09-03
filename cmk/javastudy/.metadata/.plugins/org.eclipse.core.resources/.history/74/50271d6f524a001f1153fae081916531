@@ -1,0 +1,5 @@
+package com.ict.day11;
+
+public class Ex15 {
+	// 생성자 : 클래스를 객체로 만들 때 한번 호출된다.
+}

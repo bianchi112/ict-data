@@ -1,0 +1,12 @@
+package com.ict.day11;
+
+public class Ex09 {
+	private String name = "홍길동";
+	private int age = 24;
+	private boolean gender = true;
+	
+	// 변수 데이터를 변경하는 메서드 : setter
+	public void setName(String k) {
+		name = k;
+	}
+}

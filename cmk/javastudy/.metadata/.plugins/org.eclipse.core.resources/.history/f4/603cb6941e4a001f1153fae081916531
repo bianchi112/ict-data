@@ -1,0 +1,14 @@
+package com.ict.day11;
+
+public class Ex01 {
+
+	public int add(int k) {
+		++k;
+		return k;
+	}
+
+	public void add2(int[] k) {
+
+	}
+
+}

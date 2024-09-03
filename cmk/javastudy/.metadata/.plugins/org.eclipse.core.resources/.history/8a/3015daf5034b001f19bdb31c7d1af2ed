@@ -1,0 +1,8 @@
+package com.ict.day12;
+
+public class Ex10 {
+	// static : 객체 생성과 상관없이 미리 만들어진 필드와 메서드
+	//			클래스와 지역변수에 static 사용 못함
+	//			static 메서드에서 전역변수를 사용하려면 전역변수가 static 이어야 한다.
+	
+}

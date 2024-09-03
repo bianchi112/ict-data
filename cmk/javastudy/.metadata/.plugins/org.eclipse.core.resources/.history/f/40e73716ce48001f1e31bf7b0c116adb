@@ -1,0 +1,17 @@
+package com.ict.day09;
+
+public class Ex04 {
+	public static void main(String[] args) {
+		// Math 클래스 : 수학에서 자주사용되는 상수들과 static 메서드들로 이루어진 클래스
+		//
+		System.out.println(Math.PI);
+		
+		// Math 클래스는 객체 생성 할 수 없다.
+		// Math.메서드이름() 이용해서 사용해야 된다.
+		
+		// 1. random() : 0.0이상 1.0 미만의 임의의 난수 발생
+		System.out.println(Math.random());
+		int k1 = (int)(Math.random()); // 무조건 0
+		int k1 = (int)(Math.random()*10); // 0-9
+	}
+}

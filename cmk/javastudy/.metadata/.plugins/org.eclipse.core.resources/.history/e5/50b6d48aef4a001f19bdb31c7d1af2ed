@@ -1,0 +1,19 @@
+package com.ict.day12;
+
+public class Ex01 {
+	private String name;
+	private int kor;
+	private int eng;
+	private int math;
+	private int sum;
+	private double hak;
+	private int rank = 1;
+
+	public Ex01(String name, int kor, int eng, int math) {
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+	}
+
+}

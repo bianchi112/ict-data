@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;Workshop4&apos; to &apos;javaWorkshop4/src&apos;&#x0D;&#x0A;- Original project: &apos;javastudy&apos;&#x0D;&#x0A;- Destination element: &apos;javaWorkshop4/src&apos;&#x0D;&#x0A;- Original element: &apos;javastudy/src/Workshop4&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=javaWorkshop4/src" element1="/src&lt;Workshop4" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1722239548745" version="1.0"/>
+</session>

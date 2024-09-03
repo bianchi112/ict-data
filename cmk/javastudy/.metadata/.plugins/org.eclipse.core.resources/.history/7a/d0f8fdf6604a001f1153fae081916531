@@ -1,0 +1,32 @@
+package com.ict.day11;
+
+public class Ex17 {
+	int coffee;
+	int ion;
+	int cola;
+	int price;
+	public int getCoffee() {
+		return coffee;
+	}
+	public void setCoffee(int coffee) {
+		this.coffee = coffee;
+	}
+	public int getIon() {
+		return ion;
+	}
+	public void setIon(int ion) {
+		this.ion = ion;
+	}
+	public int getCola() {
+		return cola;
+	}
+	public void setCola(int cola) {
+		this.cola = cola;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+}

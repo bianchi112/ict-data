@@ -1,0 +1,8 @@
+package com.ict.day09;
+
+public class Ex04 {
+	public static void main(String[] args) {
+		// Math 클래스 : 수학에서 자주사용되는 상수들과 static 메서드들로 이루어진 클래스
+		
+	}
+}

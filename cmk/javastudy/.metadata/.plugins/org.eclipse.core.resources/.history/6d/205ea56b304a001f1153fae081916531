@@ -1,0 +1,13 @@
+package com.ict.day11;
+
+public class Ex07 {
+	private String name = "";
+	private int kor = 0;
+	private int eng = 0;
+	private int math = 0;
+	private int sum = 0;
+	private double avg = 0.0;
+	private String hak = "";
+	private int rank = 1;
+
+}

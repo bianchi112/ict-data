@@ -1,0 +1,30 @@
+package com.ict.day04;
+
+public class Ex03 {
+
+	public static void main(String[] args) {
+		// switch ~ case : 다중 if문과 같은 조건문
+		// if 문은 조건식 boolean 형 일대 사용(비교연산, 논리연산, 범위)
+		// switch 문은 인자값이 int, char, String 일때 사용한다.
+		// 숫자라도 long, float, double 은 사용 불가
+		/*
+		 * switch(인자값){ case 조건값1 : 인자값이 원하는 조건값일 때 실행; 인자값이 원하는 조건값일 때 실행; break; case
+		 * 조건값2 : 인자값이 원하는 조건값일 때 실행; 인자값이 원하는 조건값일 때 실행; break; case 조건값3 : 인자값이 원하는
+		 * 조건값일 때 실행; 인자값이 원하는 조건값일 때 실행; break;
+		 * 
+		 * default : 조건값1, 2, 3 모두 아닐때 (나머지) } 주의 사항 : break 는 현재 실행 중인 범위({}블록)을 벗어나는
+		 * 역할 break 가 없으면 brea k를 만날때까지 아래 실행문들을 실행한다.
+		 */
+
+		// int k1이 1이면 카페모카 2이면 카페라떼 3이면 아메리카노 4이면 과일쥬스
+
+		int k1 = 3;
+		switch (k1) {
+		case 1:
+			System.out.println("카페모카");
+
+		}
+
+	}
+
+}

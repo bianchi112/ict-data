@@ -1,0 +1,13 @@
+package com.ict.day12;
+
+public class Ex03 {
+	private String cardName;
+	
+	public Ex03() {
+		System.out.println("기본생성자");
+	}
+	
+	public Ex03(String cardname) {
+		this.cardName = cardname;
+	}
+}

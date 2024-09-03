@@ -1,0 +1,10 @@
+package com.ict.day12;
+
+public class Ex15 {
+	public static void main(String[] args) {
+		// 날짜 관련 클래스
+		// 1. Date 클래스      (1.0)
+		// 2. Calendar 클래스  (5.0)
+		// 3. LocalDate 클래스 (8.0)
+	}
+}
